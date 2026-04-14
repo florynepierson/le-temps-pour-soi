@@ -77,24 +77,25 @@
         /* Images gallery*/
         .gallery {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 20px;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 24px;
+          max-width: 1200px;
+          margin: auto;
         }
         
-        /* wrapper pour gérer le zoom proprement */
         .gallery-img {
           width: 100%;
-          height: 380px;
+          height: 420px;
           object-fit: cover;
           border-radius: 14px;
-          transition: transform 0.4s ease, box-shadow 0.4s ease;
+          transition: transform 0.35s ease, box-shadow 0.35s ease;
           cursor: pointer;
         }
         
-        /* effet hover zoom */
         .gallery-img:hover {
           transform: scale(1.08);
-          box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+          z-index: 2;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
     </style>
 </head>
@@ -214,7 +215,7 @@
 
     <section class="py-20 px-4">
         <h2 class="text-center text-4xl mb-12 uppercase tracking-widest italic">Portfolio</h2>
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-2 max-w-7xl mx-auto">
+        <div class="gallery">
             <img src="https://media.storiesig.info/get?__sig=V00N4Y9KNXDLZoUNy6T1yA&__expires=1776176856&uri=https%3A%2F%2Fscontent-lga3-2.cdninstagram.com%2Fv%2Ft51.82787-15%2F670498915_18048999131740573_2848564202079794213_n.jpg%3Fse%3D-1%26stp%3Ddst-jpegr_e35_p640x640_sh0.08_tt6%26efg%3DeyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE5MjAuaGRyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0%26_nc_ht%3Dscontent-lga3-2.cdninstagram.com%26_nc_cat%3D101%26_nc_oc%3DQ6cZ2gFt8aD4WZbPEBXCFaef2N8bHXPp-IzEuMdYRwSFDNWReopMOJE-uQGhawOSGSvVQSy9VadfGeHttu8R6G2sTmf4%26_nc_ohc%3DMx2FVb4yzYgQ7kNvwFo6wCB%26_nc_gid%3DRNw4oXSBqWUPeu34jyucDA%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_Af2M1BecpD1Td_8XnFGGR0ql8z3B4_K3vnjlQYtPKMzYLg%26oe%3D69E41D13%26_nc_sid%3Dbc0c2c" class="gallery-img" alt="Pose Nailsbj">
             <img src="https://media.storiesig.info/get?__sig=mDQP90y-38M6U8ntIhprVA&__expires=1776176856&uri=https%3A%2F%2Fscontent-lga3-2.cdninstagram.com%2Fv%2Ft51.82787-15%2F670132563_18048865082740573_6824206101816978604_n.jpg%3Fse%3D-1%26stp%3Ddst-jpegr_e35_p640x640_sh0.08_tt6%26efg%3DeyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE5MjAuaGRyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0%26_nc_ht%3Dscontent-lga3-2.cdninstagram.com%26_nc_cat%3D101%26_nc_oc%3DQ6cZ2gFt8aD4WZbPEBXCFaef2N8bHXPp-IzEuMdYRwSFDNWReopMOJE-uQGhawOSGSvVQSy9VadfGeHttu8R6G2sTmf4%26_nc_ohc%3DYrezUggWJK4Q7kNvwGvQV3J%26_nc_gid%3DRNw4oXSBqWUPeu34jyucDA%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_Af0ufouNag2GnQuuVJf0QW4hFJWNLA9vyTkHSzDI789qLA%26oe%3D69E42247%26_nc_sid%3Dbc0c2c" class="gallery-img" alt="Pose Nailsbj">
             <img src="https://media.storiesig.info/get?__sig=dA4zDjPfArlU5WM3F6hSOw&__expires=1776176856&uri=https%3A%2F%2Fscontent-lga3-2.cdninstagram.com%2Fv%2Ft51.82787-15%2F669612250_18048542126740573_6777513076428609026_n.jpg%3Fse%3D-1%26stp%3Ddst-jpegr_e35_p640x640_sh0.08_tt6%26efg%3DeyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE5MjAuaGRyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0%26_nc_ht%3Dscontent-lga3-2.cdninstagram.com%26_nc_cat%3D101%26_nc_oc%3DQ6cZ2gFt8aD4WZbPEBXCFaef2N8bHXPp-IzEuMdYRwSFDNWReopMOJE-uQGhawOSGSvVQSy9VadfGeHttu8R6G2sTmf4%26_nc_ohc%3DwYmQ7sIrHZAQ7kNvwEHstQ8%26_nc_gid%3DRNw4oXSBqWUPeu34jyucDA%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_Af0xTPfOoxudQpOoWHV92P_M-rN-UWxl6eTv_E5SjMaXTw%26oe%3D69E42836%26_nc_sid%3Dbc0c2c" class="gallery-img" alt="Pose Nailsbj">
