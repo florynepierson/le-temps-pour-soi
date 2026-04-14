@@ -81,11 +81,20 @@
           gap: 20px;
         }
         
+        /* wrapper pour gérer le zoom proprement */
         .gallery-img {
           width: 100%;
           height: 380px;
           object-fit: cover;
           border-radius: 14px;
+          transition: transform 0.4s ease, box-shadow 0.4s ease;
+          cursor: pointer;
+        }
+        
+        /* effet hover zoom */
+        .gallery-img:hover {
+          transform: scale(1.08);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
     </style>
 </head>
