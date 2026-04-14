@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nailsbj - Le Temps Pour Soi | Prothésiste Ongulaire Lille</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap');
+        
+        :root {
+            --primary: #d4a373; /* Couleur terre cuite douce */
+            --bg-creme: #fefae0;
+            --text-dark: #283618;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-creme);
+            color: var(--text-dark);
+            cursor: default; /* Curseur forcé visible */
+        }
+
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+        /* Bouton Instagram Flottant */
+        .insta-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc23b1, #bc1888);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+        .insta-float:hover { transform: scale(1.1); }
+
+        .service-card {
+            background: white;
+            transition: transform 0.3s;
+            border: 1px solid #faedcd;
+        }
+        .service-card:hover { transform: translateY(-5px); }
+
+        .gallery-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://www.instagram.com/letempspoursoi.nailsbj" target="_blank" class="insta-float" title="Suivez-moi sur Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <header class="py-12 px-4 text-center bg-white shadow-sm">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-4 text-4xl font-bold tracking-widest uppercase">Nailsbj</div>
+            <p class="text-xl italic font-serif">Le Temps Pour Soi — Juliette 🌿</p>
+            <div class="mt-4 flex justify-center gap-4 text-sm">
+                <span class="bg-green-100 px-3 py-1 rounded-full">Safe place 🏳️‍🌈🏳️‍⚧️</span>
+                <span class="bg-brown-100 px-3 py-1 rounded-full">Lille (59160)</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 px-4 bg-[#faedcd] text-center">
+        <h2 class="text-3xl mb-8">Réserver votre moment</h2>
+        <p class="mb-8 max-w-2xl mx-auto">Spécialisée en ongles naturels (pas de rallongements). Tous mes outils sont désinfectés et stérilisés pour votre sécurité.</p>
+        <a href="https://www.instagram.com/letempspoursoi.nailsbj" target="_blank" class="bg-[#283618] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition">
+            Prendre RDV (via Instagram DM)
+        </a>
+    </section>
+
+    <section class="py-16 px-4 max-w-6xl mx-auto">
+        <h2 class="text-3xl text-center mb-12">Mes Prestations</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="service-card p-8 rounded-2xl">
+                <h3 class="text-2xl mb-4 border-b pb-2">Ongles Naturels 💅🏽</h3>
+                <ul class="space-y-3">
+                    <li class="flex justify-between"><span>Manucure combinée</span> <span>—</span></li>
+                    <li class="flex justify-between"><span>Pose de vernis semi-permanent</span> <span>—</span></li>
+                    <li class="flex justify-between"><span>Renforcement (Gainage)</span> <span>—</span></li>
+                    <li class="text-sm italic mt-4 text-red-600">Note : Pas de rallongements (chablon/capsules).</li>
+                </ul>
+            </div>
+            <div class="service-card p-8 rounded-2xl">
+                <h3 class="text-2xl mb-4 border-b pb-2">Regard ✨</h3>
+                <ul class="space-y-3">
+                    <li class="flex justify-between"><span>Browlift</span> <span>—</span></li>
+                    <li class="flex justify-between"><span>Korean Lash Lift</span> <span>—</span></li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-8 text-center italic text-gray-600">Retrouvez le détail complet des tarifs sur Instagram.</p>
+    </section>
+
+    <section class="py-16 bg-white px-4">
+        <h2 class="text-3xl text-center mb-12">Réalisations</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-7xl mx-auto">
+            <img src="https://media.storiesig.info/get?__sig=V00N4Y9KNXDLZoUNy6T1yA&__expires=1776176856&uri=https%3A%2F%2Fscontent-lga3-2.cdninstagram.com%2Fv%2Ft51.82787-15%2F670498915_18048999131740573_2848564202079794213_n.jpg%3Fse%3D-1%26stp%3Ddst-jpegr_e35_p640x640_sh0.08_tt6%26efg%3DeyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE5MjAuaGRyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0%26_nc_ht%3Dscontent-lga3-2.cdninstagram.com%26_nc_cat%3D101%26_nc_oc%3DQ6cZ2gFt8aD4WZbPEBXCFaef2N8bHXPp-IzEuMdYRwSFDNWReopMOJE-uQGhawOSGSvVQSy9VadfGeHttu8R6G2sTmf4%26_nc_ohc%3DMx2FVb4yzYgQ7kNvwFo6wCB%26_nc_gid%3DRNw4oXSBqWUPeu34jyucDA%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_Af2M1BecpD1Td_8XnFGGR0ql8z3B4_K3vnjlQYtPKMzYLg%26oe%3D69E41D13%26_nc_sid%3Dbc0c2c" class="gallery-img" alt="Pose Nailsbj">
+            <img src="https://media.storiesig.info/get?__sig=mDQP90y-38M6U8ntIhprVA&__expires=1776176856&uri=https%3A%2F%2Fscontent-lga3-2.cdninstagram.com%2Fv%2Ft51.82787-15%2F670132563_18048865082740573_6824206101816978604_n.jpg%3Fse%3D-1%26stp%3Ddst-jpegr_e35_p640x640_sh0.08_tt6%26efg%3DeyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE5MjAuaGRyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0%26_nc_ht%3Dscontent-lga3-2.cdninstagram.com%26_nc_cat%3D101%26_nc_oc%3DQ6cZ2gFt8aD4WZbPEBXCFaef2N8bHXPp-IzEuMdYRwSFDNWReopMOJE-uQGhawOSGSvVQSy9VadfGeHttu8R6G2sTmf4%26_nc_ohc%3DYrezUggWJK4Q7kNvwGvQV3J%26_nc_gid%3DRNw4oXSBqWUPeu34jyucDA%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_Af0ufouNag2GnQuuVJf0QW4hFJWNLA9vyTkHSzDI789qLA%26oe%3D69E42247%26_nc_sid%3Dbc0c2c" class="gallery-img" alt="Pose Nailsbj">
+            <img src="https://media.storiesig.info/get?__sig=dA4zDjPfArlU5WM3F6hSOw&__expires=1776176856&uri=https%3A%2F%2Fscontent-lga3-2.cdninstagram.com%2Fv%2Ft51.82787-15%2F669612250_18048542126740573_6777513076428609026_n.jpg%3Fse%3D-1%26stp%3Ddst-jpegr_e35_p640x640_sh0.08_tt6%26efg%3DeyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE5MjAuaGRyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0%26_nc_ht%3Dscontent-lga3-2.cdninstagram.com%26_nc_cat%3D101%26_nc_oc%3DQ6cZ2gFt8aD4WZbPEBXCFaef2N8bHXPp-IzEuMdYRwSFDNWReopMOJE-uQGhawOSGSvVQSy9VadfGeHttu8R6G2sTmf4%26_nc_ohc%3DwYmQ7sIrHZAQ7kNvwEHstQ8%26_nc_gid%3DRNw4oXSBqWUPeu34jyucDA%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_Af0xTPfOoxudQpOoWHV92P_M-rN-UWxl6eTv_E5SjMaXTw%26oe%3D69E42836%26_nc_sid%3Dbc0c2c" class="gallery-img" alt="Pose Nailsbj">
+            <img src="https://media.storiesig.info/get?__sig=IAz-FTiWHMJ3tMHwB2Wv3Q&__expires=1776176856&uri=https%3A%2F%2Fscontent-lga3-2.cdninstagram.com%2Fv%2Ft51.82787-15%2F660438997_18048249659740573_8716721007481146992_n.jpg%3Fse%3D-1%26stp%3Ddst-jpegr_e35_p640x640_sh0.08_tt6%26efg%3DeyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE5MTYuaGRyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0%26_nc_ht%3Dscontent-lga3-2.cdninstagram.com%26_nc_cat%3D101%26_nc_oc%3DQ6cZ2gFt8aD4WZbPEBXCFaef2N8bHXPp-IzEuMdYRwSFDNWReopMOJE-uQGhawOSGSvVQSy9VadfGeHttu8R6G2sTmf4%26_nc_ohc%3Dea9spLaeTMQQ7kNvwEMLPht%26_nc_gid%3DRNw4oXSBqWUPeu34jyucDA%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_Af3lbx3SipWTEaGsZ4YyjhUQi7HWyXSwrVrTP3ugsrqQDQ%26oe%3D69E41ACE%26_nc_sid%3Dbc0c2c" class="gallery-img" alt="Pose Nailsbj">
+        </div>
+    </section>
+
+    <section class="py-16 px-4 max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+        <div>
+            <h2 class="text-3xl mb-6">Informations</h2>
+            <p class="mb-2"><strong>Adresse :</strong> Rue Wulverick, 59160 Lille</p>
+            <p class="mb-2"><strong>Téléphone :</strong> 07 44 88 96 56</p>
+            <p class="mb-4"><strong>Note Google :</strong> 5.0 ⭐ (Excellent)</p>
+            
+            <div class="mt-6">
+                <h3 class="font-bold mb-2">Horaires :</h3>
+                <ul class="text-sm space-y-1">
+                    <li>Mardi - Vendredi : 09:30 – 20:30</li>
+                    <li>Samedi - Dimanche : 10:00 – 20:00</li>
+                    <li>Lundi : Fermé</li>
+                </ul>
+            </div>
+
+            <div class="mt-8 flex gap-4">
+                <a href="https://www.instagram.com/letempspoursoi.nailsbj" target="_blank" class="text-2xl hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.4!2d3.0!3d50.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d59... (Lien simplifié)" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-[#283618] text-white text-center text-sm">
+        <p>&copy; 2024 Nailsbj - Le Temps Pour Soi. Tous droits réservés.</p>
+        <p class="mt-2 opacity-70">Certifiée, déclarée, assurée ✨</p>
+    </footer>
+
+</body>
+</html>
